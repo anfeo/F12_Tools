@@ -93,7 +93,7 @@ class RENDER_OT_FTwelve(Operator):
     
     def invoke(self, context, event):
         user_preferences = context.preferences
-        addon_prefs = user_preferences.addons["render_F12"].preferences
+        addon_prefs = user_preferences.addons["F12"].preferences
         if addon_prefs.not_show:
             return self.execute(context) 
         else: 
@@ -102,7 +102,7 @@ class RENDER_OT_FTwelve(Operator):
     def draw(self, context):
         
         user_preferences = context.preferences
-        addon_prefs = user_preferences.addons["render_F12"].preferences
+        addon_prefs = user_preferences.addons["F12"].preferences
         layout = self.layout
         layout.use_property_split = True
         layout.use_property_decorate = False  # No animation.
@@ -126,7 +126,7 @@ class RENDER_OT_FTwelve(Operator):
     
     def execute(self, context):
         user_preferences = context.preferences
-        addon_prefs = user_preferences.addons["render_F12"].preferences
+        addon_prefs = user_preferences.addons["F12"].preferences
         save = addon_prefs.save
         auto_slot_add()
         rd = context.scene.render 
