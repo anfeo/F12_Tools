@@ -17,7 +17,7 @@ from bpy.props import EnumProperty, StringProperty, BoolProperty, IntProperty, C
 
 def save_render_slot(scene):
     user_preferences = bpy.context.preferences
-    addon_prefs = user_preferences.addons["render_F12"].preferences
+    addon_prefs = user_preferences.addons["F12"].preferences
     save = addon_prefs.save
     images = bpy.data.images
     img = images['Render Result']
