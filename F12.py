@@ -62,7 +62,7 @@ class FTwelvePreferences(AddonPreferences):
 
     not_show : BoolProperty(default=False)
     save : BoolProperty(default=False)
-    oldpath : StringProperty(default=False)
+    oldpath : StringProperty()
     
     
     def draw(self, context):
