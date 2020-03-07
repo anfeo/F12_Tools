@@ -1,7 +1,7 @@
 bl_info = {
     "name": "F12",
     "author": "Alfonso Annarumma",
-    "version": (1, 0),
+    "version": (1, 2),
     "blender": (2, 80, 0),
     "location": "View3D > Toolbox",
     "description": "Render Options, autoslot selection, path setting etc..",
